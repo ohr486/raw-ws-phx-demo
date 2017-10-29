@@ -7,10 +7,10 @@ window.userToken = "SFMyNTY.g3QAAAACZAAEZGF0YW0AAAAHYWJjZGVmZ2QABnNpZ25lZG4GADsm
 //window.userToken = "NGSFMyNTY.g3QAAAACZAAEZGF0YW0AAAAHYWJjZGVmZ2QABnNpZ25lZG4GADsmVi9dAQ.TJkjH3JkoP3vUAPrw9BpYjV49iMyXe8CebqHws8HQpc"
 
 // local
-//let socket = new Socket("ws://localhost:4000/socket", {params: {userToken: window.userToken}})
+let socket = new Socket("ws://localhost:4000/socket", {params: {userToken: window.userToken}})
 
 // staging
-let socket = new Socket("ws://10.132.0.239:4000/socket", {params: {userToken: window.userToken}})
+//let socket = new Socket("ws://xxx.xxx.xxx.xxx:4000/socket", {params: {userToken: window.userToken}})
 
 socket.connect()
 socket.onOpen( ev => console.log("OPEN", ev) )
